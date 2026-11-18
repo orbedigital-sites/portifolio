@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Orbe Digital — Marketing com resultado e Filmmaker para Eventos</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#000}
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+a{color:#fff;text-decoration:none}a:hover{color:#d4d4d4}
+.h{font-family:'Archivo',Inter,sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-0.01em;line-height:.94;font-stretch:108%}
+.o{color:transparent;-webkit-text-stroke:1.5px #fff}
+.o-dark{color:transparent;-webkit-text-stroke:1.5px #000}
+.lbl{font-family:'Archivo',Inter,sans-serif;font-weight:600;letter-spacing:.24em;text-transform:uppercase;font-size:12px}
+.btn{transition:transform .35s cubic-bezier(.2,.7,.2,1),background .3s,color .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 44px -16px rgba(255,255,255,.5)}
+.btn-ghost:hover{background:#fff !important;color:#000 !important}
+.btn-dark:hover{box-shadow:0 18px 40px -16px rgba(0,0,0,.6)}
+.btn .arr{transition:transform .35s}
+.btn:hover .arr{transform:translateX(4px)}
+.card{position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .4s}
+.card:hover{transform:translateY(-8px);border-color:rgba(255,255,255,.28) !important}
+.card::after{content:'';position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.09),transparent);transform:skewX(-18deg);transition:left .9s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.card:hover::after{left:135%}
+.glass{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.09)}
+@property --a{syntax:'<angle>';inherits:false;initial-value:0deg}
+@keyframes rot{to{--a:360deg}}
+.gb{padding:1.5px;background:conic-gradient(from var(--a),rgba(255,255,255,.08) 0deg,#fff 45deg,rgba(255,255,255,.08) 100deg,rgba(255,255,255,.08) 360deg);animation:rot 5s linear infinite}
+.gridbg{background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:72px 72px;-webkit-mask-image:radial-gradient(ellipse at 50% 35%,#000 25%,transparent 72%);mask-image:radial-gradient(ellipse at 50% 35%,#000 25%,transparent 72%)}
+.tag{transition:background .3s,color .3s,border-color .3s}
+.tag:hover{background:#fff;color:#000;border-color:#fff !important}
+.zoom img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.zoom:hover img{transform:scale(1.05)}
+.ico{transition:transform .5s cubic-bezier(.2,.7,.2,1),background .4s,color .4s}
+.card:hover .ico{transform:rotate(-8deg) scale(1.08);background:#fff;color:#000}
+@keyframes inUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes inFade{from{opacity:0}to{opacity:1}}
+.in{animation:inUp 1.1s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.22s}.d3{animation-delay:.34s}.d4{animation-delay:.48s}.d5{animation-delay:.62s}
+.fade{animation:inFade 2s ease both}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mq{animation:mq 34s linear infinite}
+.mq-r{animation:mq 40s linear infinite reverse}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.rec{animation:pulse 1.4s ease-in-out infinite}
+@keyframes ping{0%{transform:scale(1);opacity:.6}100%{transform:scale(2.4);opacity:0}}
+.ping{animation:ping 1.8s cubic-bezier(0,0,.2,1) infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.float{animation:float 5s ease-in-out infinite}
+@keyframes rv{from{opacity:0;transform:translateY(56px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@supports (animation-timeline: view()){
+.rv{animation:rv linear both;animation-timeline:view();animation-range:entry 0% entry 42%}
+.grow{animation:grow linear both;animation-timeline:view();animation-range:entry 30% cover 55%}
+}
+.w{display:inline-block;vertical-align:top}
+.wi{display:inline-block;animation:wUp 1.05s cubic-bezier(.2,.85,.2,1) both}
+@keyframes wUp{from{transform:translateY(70%) rotate(4deg);opacity:0;clip-path:inset(0 -20% 100% -20%)}to{transform:none;opacity:1;clip-path:inset(-120px -120px -120px -120px)}}
+@keyframes clipLoad{from{clip-path:inset(100% 0 0 0 round 28px)}to{clip-path:inset(0 0 0 0 round 28px)}}
+.clipload{animation:clipLoad 1.5s cubic-bezier(.75,0,.2,1) .25s both}
+@keyframes clipIn{from{clip-path:inset(22% 14% 22% 14% round 28px);filter:grayscale(1)}to{clip-path:inset(0 0 0 0 round 28px);filter:grayscale(0)}}
+@keyframes zoomOut{from{transform:scale(1.35)}to{transform:scale(1)}}
+@keyframes blurIn{from{opacity:0;filter:blur(14px);transform:translateY(30px)}to{opacity:1;filter:blur(0);transform:none}}
+@keyframes scan{0%{transform:translateY(-100%)}100%{transform:translateY(900%)}}
+.scan{animation:scan 4.5s linear infinite}
+@keyframes shimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+.shim{background:linear-gradient(90deg,#fff 0%,#fff 40%,#8a8a8a 50%,#fff 60%,#fff 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 4s linear infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.caret{display:inline-block;width:.08em;height:.8em;background:#fff;margin-left:.08em;vertical-align:baseline;animation:blink 1s steps(1) infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+.bob{animation:bob 1.8s ease-in-out infinite}
+.mag{transition:transform .25s cubic-bezier(.2,.7,.2,1)}
+@supports (animation-timeline: view()){
+.clip{animation:clipIn linear both;animation-timeline:view();animation-range:entry 0% cover 45%}
+.zoomout{animation:zoomOut linear both;animation-timeline:view();animation-range:entry 0% exit 0%}
+.blurin{animation:blurIn linear both;animation-timeline:view();animation-range:entry 5% entry 55%}
+}
+@keyframes skScroll{0%,8%{transform:translateY(0)}92%,100%{transform:translateY(-62%)}}
+.sk{animation:skScroll 11s cubic-bezier(.6,0,.4,1) infinite alternate}
+.browser{transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s}
+.browser:hover{transform:translateY(-10px) rotate(-.4deg);box-shadow:0 50px 90px -40px rgba(255,255,255,.25)}
+@media (prefers-reduced-motion:reduce){
+*{animation:none !important;transition:none !important}
+}
+@media (max-width:760px){
+.hide-sm{display:none !important}
+}
+</style>
+</helmet>
+
+<div ref="{{refs.root}}" style="width: 100%; min-height: 100vh; background: #000; color: #fff; font-family: Inter, system-ui, sans-serif; overflow-x: hidden; position: relative">
+
+<header style="position: sticky; top: 0; z-index: 50; background: rgba(0,0,0,0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,0.08)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="#topo" aria-label="Orbe Digital, início" style="display: flex; align-items: center">
+<img src="/_blob/2d45ad0ca5bdb37d35c0f6b76fa14eff" alt="Orbe Digital, empresa de marketing" style="height: 38px; width: auto; display: block">
+</a>
+<nav aria-label="Seções" class="hide-sm" style="display: flex; gap: 2px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; padding: 4px">
+<a href="#resultados" style="padding: 9px 18px; border-radius: 999px; font-size: 14px; color: #d4d4d4">Resultados</a>
+<a href="#marketing" style="padding: 9px 18px; border-radius: 999px; font-size: 14px; color: #d4d4d4">Marketing</a>
+<a href="#sites" style="padding: 9px 18px; border-radius: 999px; font-size: 14px; color: #d4d4d4">Sites</a>
+<a href="#eventos" style="padding: 9px 18px; border-radius: 999px; font-size: 14px; color: #d4d4d4">Eventos</a>
+<a href="#sobre" style="padding: 9px 18px; border-radius: 999px; font-size: 14px; color: #d4d4d4">Sobre</a>
+</nav>
+<a class="btn" href="{{wa.geral}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #fff; color: #000; padding: 12px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px">
+<span style="position: relative; width: 8px; height: 8px; display: block"><span class="ping" style="position: absolute; inset: 0; border-radius: 50%; background: #000; display: block"></span><span style="position: absolute; inset: 0; border-radius: 50%; background: #000; display: block"></span></span>
+Falar no WhatsApp</a>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: #fff; transform-origin: left; transform: scaleX({{prog}})"></div>
+</header>
+
+<section id="topo" ref="{{refs.hero}}" onMouseMove="{{onSpot}}" style="position: relative; padding: clamp(56px, 7vw, 100px) 24px clamp(72px, 8vw, 120px); overflow: hidden">
+<div aria-hidden="true" class="gridbg" style="position: absolute; inset: 0; pointer-events: none"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(520px circle at {{spot}}, rgba(255,255,255,0.09), transparent 60%); transition: background .15s"></div>
+<div aria-hidden="true" class="fade" style="position: absolute; right: -6vw; top: 40px; width: 46vw; max-width: 720px; opacity: 0.06; pointer-events: none; transform: {{px.mark}}">
+<img src="/_blob/1c41d618a565f3604e7e73458d6454bb" alt="" style="width: 100%; display: block">
+</div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(40px, 6vw, 80px)">
+
+<div style="flex: 1 1 560px; min-width: 0">
+<div class="in" style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.04); border-radius: 999px; padding: 8px 16px 8px 10px; margin-bottom: 30px">
+<span style="background: #fff; color: #000; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 800">+30</span>
+<span style="font-size: 13px; color: #d4d4d4">empresas parceiras em diversos nichos</span>
+</div>
+<h1 class="h" style="margin: 0; font-size: clamp(46px, 6.4vw, 96px); text-shadow: 0 2px 6px rgba(0,0,0,0.9), 0 6px 30px rgba(0,0,0,0.85), 0 0 60px rgba(0,0,0,0.6)"><span class="w"><span class="wi" style="animation-delay: .10s">Tráfego,</span></span> <span class="w"><span class="wi" style="animation-delay: .18s">conteúdo</span></span> <span class="w"><span class="wi" style="animation-delay: .26s">e</span></span> <span class="w"><span class="wi" style="animation-delay: .34s">filme</span></span> <span class="w"><span class="wi" style="animation-delay: .42s">que</span></span> <span class="w"><span class="wi" style="animation-delay: .50s">geram</span></span> <span class="w"><span class="wi" style="animation-delay: .58s">resultado</span></span> <span class="w"><span class="wi o" style="animation-delay: .70s">real</span></span><span class="w"><span class="wi" style="animation-delay: .78s">.</span></span></h1>
+<p class="in d4" style="margin: 30px 0 0; max-width: 560px; font-size: clamp(17px, 1.4vw, 19px); line-height: 1.65; color: #c7c7c7; text-shadow: 0 1px 3px rgba(0,0,0,0.95), 0 4px 18px rgba(0,0,0,0.85)">Sou Lucas Clark, filmmaker e fundador da Orbe Digital. Anúncios, redes sociais e produção audiovisual trabalhando juntos para o seu negócio <strong style="color: #fff; font-weight: 600">vender mais</strong>, com <strong style="color: #fff; font-weight: 600">95% de resultados positivos</strong> nos clientes que atendemos.</p>
+<div class="in d5" style="margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px">
+<a class="btn" href="{{wa.marketing}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; background: #fff; color: #000; padding: 18px 30px; border-radius: 999px; font-size: 16px; font-weight: 700; min-height: 56px">Quero resultados no meu negócio <svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="btn btn-ghost" href="#eventos" style="display: inline-flex; align-items: center; gap: 10px; background: transparent; color: #fff; padding: 17px 26px; border-radius: 999px; font-size: 16px; font-weight: 600; border: 1px solid rgba(255,255,255,0.25); min-height: 56px">Filmar meu evento</a>
+</div>
+<p class="in d4" style="margin: 26px 0 0; max-width: 480px; display: flex; gap: 10px; font-size: 13px; line-height: 1.6; color: #8f8f8f"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.4A8.5 8.5 0 1 1 21 12z"></path></svg><span>Os botões abrem o WhatsApp com a mensagem pronta para o serviço escolhido. <strong style="color: #e5e5e5; font-weight: 600">Quem responde sou eu.</strong></span></p>
+</div>
+
+<div onMouseMove="{{onTilt}}" onMouseLeave="{{offTilt}}" style="flex: 1 1 380px; min-width: 0; max-width: 500px; position: relative; perspective: 1100px">
+<div style="position: relative; transform: rotateX({{tilt.x}}deg) rotateY({{tilt.y}}deg); transform-style: preserve-3d; transition: transform .35s cubic-bezier(.2,.7,.2,1)">
+<div class="zoom clipload" style="position: relative; height: clamp(460px, 50vw, 640px); border-radius: 28px; overflow: hidden; background: #111; border: 1px solid rgba(255,255,255,0.1)">
+<div style="position: absolute; left: 0; right: 0; top: -14%; bottom: -14%; transform: {{px.hero}}; will-change: transform">
+<img src="/_blob/925d2bdf7bd8217c1c2901bc51bb33e9" alt="Lucas Clark, filmmaker, planejando um roteiro no tablet" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; display: block">
+</div>
+<div aria-hidden="true" class="scan" style="position: absolute; left: 0; right: 0; top: 0; height: 12%; background: linear-gradient(180deg, transparent, rgba(255,255,255,0.07), transparent); pointer-events: none"></div>
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.8) 100%)"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(400px circle at {{tilt.glare}}, rgba(255,255,255,0.14), transparent 55%)"></div>
+<div style="position: absolute; left: 24px; bottom: 22px; right: 24px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px">
+<div>
+<p class="h" style="margin: 0; font-size: 22px; line-height: 1">Lucas Clark</p>
+<p style="margin: 6px 0 0; font-size: 13px; color: #c7c7c7">Filmmaker · Estratégias de crescimento</p>
+</div>
+<span class="lbl" style="font-size: 11px; color: #c7c7c7">Piancó · PB</span>
+</div>
+</div>
+<div style="position: absolute; left: -34px; top: 48px; transform: {{px.chip1}}">
+<div class="float" style="background: rgba(12,12,12,0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.14); border-radius: 18px; padding: 16px 20px; min-width: 180px">
+<p class="h" style="margin: 0; font-size: 40px; line-height: 1">+{{n30}}</p>
+<p style="margin: 6px 0 0; font-size: 12px; color: #b5b5b5">empresas parceiras</p>
+</div>
+</div>
+<div class="hide-sm" style="position: absolute; right: -30px; bottom: 120px; transform: {{px.chip2}}">
+<div class="float" style="background: #fff; color: #000; border-radius: 18px; padding: 16px 20px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.85); animation-delay: -2.5s">
+<p class="h" style="margin: 0; font-size: 40px; line-height: 1">{{n95}}%</p>
+<p style="margin: 6px 0 0; font-size: 12px; color: #404040; font-weight: 500">resultados positivos</p>
+</div>
+</div>
+<div style="position: absolute; left: 22px; top: 22px; display: flex; align-items: center; gap: 8px; background: rgba(0,0,0,0.55); border-radius: 999px; padding: 7px 12px; font-size: 11px; letter-spacing: .14em; font-weight: 700" class="hide-sm">
+<span class="rec" style="width: 7px; height: 7px; border-radius: 50%; background: #fff; display: block"></span>REC
+</div>
+</div>
+</div>
+
+</div>
+<a href="#resultados" aria-label="Rolar para os resultados" class="hide-sm" style="position: absolute; left: 50%; bottom: 22px; margin-left: -22px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center">
+<svg class="bob" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg>
+</a>
+</section>
+
+<div aria-hidden="true" style="border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); overflow: hidden; padding: 20px 0; background: #fff; color: #000">
+<div class="mq h" style="display: flex; width: max-content; gap: 40px; font-size: clamp(22px, 2.6vw, 34px); white-space: nowrap; align-items: center">
+<span>Tráfego pago</span><span>✦</span><span class="o-dark">Social media</span><span>✦</span><span>Filmmaker</span><span>✦</span><span class="o-dark">Eventos</span><span>✦</span><span>Resultados reais</span><span>✦</span><span class="o-dark">Estratégia</span><span>✦</span>
+<span>Tráfego pago</span><span>✦</span><span class="o-dark">Social media</span><span>✦</span><span>Filmmaker</span><span>✦</span><span class="o-dark">Eventos</span><span>✦</span><span>Resultados reais</span><span>✦</span><span class="o-dark">Estratégia</span><span>✦</span>
+</div>
+</div>
+
+<section id="resultados" ref="{{refs.stats}}" style="padding: clamp(80px, 10vw, 140px) 24px; position: relative">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 52px">
+<h2 class="h" style="margin: 0; font-size: clamp(38px, 5vw, 72px); max-width: 760px">Números que falam <span class="o">por nós</span>.</h2>
+<p style="margin: 0; max-width: 360px; font-size: 16px; line-height: 1.6; color: #a3a3a3">Nada de promessa vazia. Trabalho medido do primeiro anúncio ao último relatório.</p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 18px">
+
+<div class="gb rv" style="border-radius: 28px; grid-column: span 1">
+<div class="card" style="height: 100%; border-radius: 26.5px; background: #070707; padding: 36px 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 300px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span class="lbl" style="color: #a3a3a3">Parceiros</span>
+<span class="ico" style="width: 44px; height: 44px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"></path></svg></span>
+</div>
+<div>
+<p class="h" style="margin: 0; font-size: clamp(80px, 9vw, 128px); line-height: .85">+{{n30}}</p>
+<p style="margin: 14px 0 0; font-size: 17px; font-weight: 600">empresas parceiras</p>
+<p style="margin: 6px 0 0; font-size: 14px; line-height: 1.6; color: #a3a3a3">Negócios locais e marcas que confiam o marketing à Orbe Digital.</p>
+</div>
+</div>
+</div>
+
+<div class="card glass rv" style="border-radius: 28px; padding: 36px 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 300px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span class="lbl" style="color: #a3a3a3">Aprovação</span>
+<span class="ico" style="width: 44px; height: 44px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span>
+</div>
+<div style="display: flex; align-items: center; gap: 24px">
+<svg width="132" height="132" viewBox="0 0 132 132" role="img" aria-label="95% de resultados positivos" style="flex: none; transform: rotate(-90deg)">
+<circle cx="66" cy="66" r="56" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="10"></circle>
+<circle cx="66" cy="66" r="56" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-dasharray="351.86" stroke-dashoffset="{{ring}}"></circle>
+</svg>
+<div>
+<p class="h" style="margin: 0; font-size: clamp(56px, 6vw, 80px); line-height: .85">{{n95}}%</p>
+<p style="margin: 10px 0 0; font-size: 17px; font-weight: 600">resultados positivos</p>
+</div>
+</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.6; color: #a3a3a3">Em diversos nichos: alimentação, saúde, moda, varejo, esporte e serviços.</p>
+</div>
+
+<div class="card glass rv" style="border-radius: 28px; padding: 36px 32px; display: flex; flex-direction: column; gap: 22px; min-height: 300px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span class="lbl" style="color: #a3a3a3">Tráfego pago</span>
+<span class="ico" style="width: 44px; height: 44px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"></path></svg></span>
+</div>
+<p class="h" style="margin: 0; font-size: clamp(30px, 3vw, 40px); line-height: 1">Tráfego com resultados <span class="o">reais</span></p>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; gap: 12px"><div style="flex: 1; height: 34px; border-radius: 10px; background: rgba(255,255,255,0.06); overflow: hidden"><div style="height: 100%; width: {{f.a}}; background: #fff; border-radius: 10px; display: flex; align-items: center; padding-left: 12px; color: #000; font-size: 12px; font-weight: 700; white-space: nowrap; transition: width .2s">Anúncio</div></div></div>
+<div style="display: flex; align-items: center; gap: 12px"><div style="flex: 1; height: 34px; border-radius: 10px; background: rgba(255,255,255,0.06); overflow: hidden"><div style="height: 100%; width: {{f.b}}; background: #d4d4d4; border-radius: 10px; display: flex; align-items: center; padding-left: 12px; color: #000; font-size: 12px; font-weight: 700; white-space: nowrap">Cliques</div></div></div>
+<div style="display: flex; align-items: center; gap: 12px"><div style="flex: 1; height: 34px; border-radius: 10px; background: rgba(255,255,255,0.06); overflow: hidden"><div style="height: 100%; width: {{f.c}}; background: #a3a3a3; border-radius: 10px; display: flex; align-items: center; padding-left: 12px; color: #000; font-size: 12px; font-weight: 700; white-space: nowrap">Conversas no WhatsApp</div></div></div>
+<div style="display: flex; align-items: center; gap: 12px"><div style="flex: 1; height: 34px; border-radius: 10px; background: rgba(255,255,255,0.06); overflow: hidden"><div style="height: 100%; width: {{f.d}}; background: #fff; border-radius: 10px; display: flex; align-items: center; padding-left: 12px; color: #000; font-size: 12px; font-weight: 800; white-space: nowrap">Vendas</div></div></div>
+</div>
+<p style="margin: 0; font-size: 13px; line-height: 1.6; color: #8f8f8f">Campanhas na Meta e no Google acompanhadas até a venda, não só até o clique.</p>
+</div>
+
+</div>
+
+<div class="rv" style="margin-top: 18px; border-radius: 28px; border: 1px solid rgba(255,255,255,0.09); overflow: hidden; padding: 26px 0; background: rgba(255,255,255,0.02)">
+<p class="lbl" style="margin: 0 0 18px; padding: 0 32px; color: #a3a3a3">Diversos nichos atendidos</p>
+<div aria-hidden="true" style="overflow: hidden">
+<div class="mq-r" style="display: flex; width: max-content; gap: 12px; padding-left: 12px">
+<span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Padarias</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Farmácias</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Laboratórios</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Lojas de motos</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Moda</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Empórios</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Docerias</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Academias</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Açaiterias</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Importados</span>
+<span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Padarias</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Farmácias</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Laboratórios</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Lojas de motos</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Moda</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Empórios</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Docerias</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Academias</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Açaiterias</span><span style="border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 12px 20px; font-size: 15px; white-space: nowrap">Importados</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div ref="{{refs.big}}" aria-hidden="true" style="overflow: hidden; padding: clamp(20px, 3vw, 40px) 0; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07)">
+<div class="h" style="white-space: nowrap; font-size: clamp(64px, 11vw, 170px); line-height: 1; transform: {{px.big1}}; will-change: transform">Resultados <span class="o">reais</span> ✦ Tráfego <span class="o">pago</span> ✦ Filmmaker ✦ Resultados <span class="o">reais</span></div>
+<div class="h" style="white-space: nowrap; font-size: clamp(64px, 11vw, 170px); line-height: 1; margin-top: 8px; transform: {{px.big2}}; will-change: transform"><span class="o">Conteúdo</span> ✦ Eventos ✦ <span class="o">Estratégia</span> ✦ +30 empresas ✦ <span class="o">Conteúdo</span></div>
+</div>
+
+<section style="padding: clamp(60px, 8vw, 110px) 24px clamp(80px, 10vw, 140px)">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px">
+<h2 class="h" style="margin: 0; font-size: clamp(36px, 4.6vw, 64px); max-width: 720px">É pra você <span class="o">que</span>:</h2>
+<span class="lbl" style="color: #a3a3a3">Para quem é</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px">
+<div class="card glass rv" style="border-radius: 24px; padding: 34px 30px 38px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="ico" style="width: 52px; height: 52px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"></path></svg></span><span class="h" style="font-size: 44px; color: #2a2a2a">01</span></div>
+<h3 class="h" style="margin: 0; font-size: 24px; line-height: 1.1">Investe nas redes e não vê o cliente chegar</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #a3a3a3">Quer que anúncios e conteúdo virem <strong style="color: #fff; font-weight: 600">mensagens, pedidos e vendas</strong>, não só curtidas.</p>
+</div>
+<div class="card glass rv" style="border-radius: 24px; padding: 34px 30px 38px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="ico" style="width: 52px; height: 52px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="14" height="12" rx="2.5"></rect><path d="M16.5 10.5l5-3v9l-5-3"></path></svg></span><span class="h" style="font-size: 44px; color: #2a2a2a">02</span></div>
+<h3 class="h" style="margin: 0; font-size: 24px; line-height: 1.1">Quer uma marca com imagem forte</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #a3a3a3">Precisa de vídeos com <strong style="color: #fff; font-weight: 600">qualidade de produção</strong> e presença digital consistente, sem improviso.</p>
+</div>
+<div class="card glass rv" style="border-radius: 24px; padding: 34px 30px 38px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="ico" style="width: 52px; height: 52px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.5"></rect><path d="M3 9.5h18M8 2.5v4M16 2.5v4"></path></svg></span><span class="h" style="font-size: 44px; color: #2a2a2a">03</span></div>
+<h3 class="h" style="margin: 0; font-size: 24px; line-height: 1.1">Vai fazer um evento que precisa ser lembrado</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #a3a3a3">Casamento, aniversário, corporativo ou esportivo, <strong style="color: #fff; font-weight: 600">filmado e editado com olhar de cinema</strong>.</p>
+</div>
+</div>
+<div class="rv" style="display: flex; justify-content: center; margin-top: 52px">
+<a class="btn" href="{{wa.geral}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; background: #fff; color: #000; padding: 19px 42px; border-radius: 999px; font-size: 17px; font-weight: 700; min-height: 56px">É pra mim! <svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<section id="marketing" style="padding: clamp(80px, 10vw, 140px) 24px; background: #060606; border-top: 1px solid rgba(255,255,255,0.07); position: relative; overflow: hidden">
+<div aria-hidden="true" class="gridbg" style="position: absolute; inset: 0; pointer-events: none; opacity: .6"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto">
+<div class="rv" style="max-width: 800px; margin-bottom: 60px">
+<p class="lbl" style="margin: 0 0 22px; color: #a3a3a3">Redes sociais &nbsp;|&nbsp; Tráfego pago &nbsp;|&nbsp; Conteúdo</p>
+<h2 class="h" style="margin: 0; font-size: clamp(40px, 5.4vw, 80px)">Pacotes para o seu negócio <span class="o">crescer</span>.</h2>
+<p style="margin: 24px 0 0; font-size: 18px; line-height: 1.6; color: #b5b5b5">Escolha o ponto de partida. Na primeira conversa eu entendo o momento da sua empresa e ajusto o pacote para buscar o resultado que você precisa.</p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; align-items: stretch">
+
+<div class="card glass rv" style="border-radius: 28px; padding: 38px 32px; display: flex; flex-direction: column; background-color: #000">
+<p class="lbl" style="margin: 0; color: #a3a3a3">Pacote 01</p>
+<h3 class="h" style="margin: 14px 0 0; font-size: clamp(30px, 2.8vw, 38px); font-stretch: 100%; overflow-wrap: anywhere">Presença</h3>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: #a3a3a3">Para aparecer com constância e uma imagem profissional.</p>
+<div style="height: 1px; background: rgba(255,255,255,0.1); margin: 28px 0"></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 15px; color: #e5e5e5; flex-grow: 1">
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Planejamento mensal de conteúdo</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Criação de posts para feed e stories</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Legendas e calendário de publicação</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Relatório mensal de desempenho</li>
+</ul>
+<p style="margin: 32px 0 18px; font-size: 13px; color: #8f8f8f">Investimento sob consulta</p>
+<a class="btn btn-ghost" href="{{wa.presenca}}" target="_blank" rel="noopener" style="display: flex; justify-content: center; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 16px; border-radius: 999px; font-size: 15px; font-weight: 700; min-height: 52px">Quero o Presença</a>
+</div>
+
+<div class="gb rv" style="border-radius: 28px">
+<div class="card" style="height: 100%; border-radius: 26.5px; background: #fff; color: #000; padding: 38px 32px; display: flex; flex-direction: column; position: relative">
+<span style="position: absolute; top: 24px; right: 24px; background: #000; color: #fff; font-size: 11px; letter-spacing: 0.14em; padding: 7px 12px; border-radius: 999px; font-weight: 700">MAIS RESULTADO</span>
+<p class="lbl" style="margin: 0; color: #525252">Pacote 02</p>
+<h3 class="h" style="margin: 14px 0 0; font-size: clamp(30px, 2.8vw, 38px); font-stretch: 100%; overflow-wrap: anywhere">Crescimento</h3>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: #404040">Para transformar seguidores em clientes, todo mês.</p>
+<div style="height: 1px; background: #e5e5e5; margin: 28px 0"></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 15px; color: #171717; flex-grow: 1">
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Tudo do pacote Presença</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg><span><strong>Tráfego pago na Meta</strong> (Instagram e Facebook)</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Gravação e edição de vídeos para Reels</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Reunião mensal de resultados</li>
+</ul>
+<p style="margin: 32px 0 18px; font-size: 13px; color: #525252">Investimento sob consulta</p>
+<a class="btn btn-dark" href="{{wa.crescimento}}" target="_blank" rel="noopener" style="display: flex; justify-content: center; align-items: center; gap: 10px; background: #000; color: #fff; padding: 16px; border-radius: 999px; font-size: 15px; font-weight: 700; min-height: 52px">Quero o Crescimento <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+
+<div class="card glass rv" style="border-radius: 28px; padding: 38px 32px; display: flex; flex-direction: column; background-color: #000">
+<p class="lbl" style="margin: 0; color: #a3a3a3">Pacote 03</p>
+<h3 class="h" style="margin: 14px 0 0; font-size: clamp(30px, 2.8vw, 38px); font-stretch: 100%; overflow-wrap: anywhere">Completo</h3>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: #a3a3a3">Marketing, produção e campanhas integrados num plano só.</p>
+<div style="height: 1px; background: rgba(255,255,255,0.1); margin: 28px 0"></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 15px; color: #e5e5e5; flex-grow: 1">
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Tudo do pacote Crescimento</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Diária mensal de produção audiovisual</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Anúncios no Google</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Campanhas sazonais e de lançamento</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg>Organização do atendimento no WhatsApp</li>
+</ul>
+<p style="margin: 32px 0 18px; font-size: 13px; color: #8f8f8f">Investimento sob consulta</p>
+<a class="btn btn-ghost" href="{{wa.completo}}" target="_blank" rel="noopener" style="display: flex; justify-content: center; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 16px; border-radius: 999px; font-size: 15px; font-weight: 700; min-height: 52px">Quero o Completo</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="sites" style="padding: clamp(80px, 10vw, 140px) 24px; position: relative; overflow: hidden; border-top: 1px solid rgba(255,255,255,0.07)">
+<div style="max-width: 1240px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: 56px">
+<div class="rv" style="flex: 1 1 560px; min-width: 0">
+<p class="lbl" style="margin: 0 0 22px; color: #a3a3a3">Sites &nbsp;|&nbsp; Landing pages &nbsp;|&nbsp; Páginas online</p>
+<h2 class="h" style="margin: 0; font-size: clamp(40px, 5.4vw, 80px)">Sites que vendem <span class="o">por você</span>.</h2>
+</div>
+<p class="rv" style="flex: 0 1 400px; min-width: 0; margin: 0; font-size: 17px; line-height: 1.65; color: #b5b5b5">Criamos sites e landing pages modernos, com animação e o WhatsApp sempre à mão. Seu cliente encontra, entende o que você vende e chama na hora.</p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px">
+<div class="rv" style="display: flex; flex-direction: column; gap: 18px">
+<div class="browser" style="border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.14); background: #0a0a0a; box-shadow: 0 40px 80px -40px rgba(0,0,0,.9)">
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #141414; border-bottom: 1px solid rgba(255,255,255,0.08)">
+<div style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #3a3a3a; display: block"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #3a3a3a; display: block"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #3a3a3a; display: block"></span></div>
+<div style="flex: 1; min-width: 0; background: #0a0a0a; border-radius: 8px; padding: 7px 12px; font-size: 12px; color: #a3a3a3; display: flex; align-items: center; gap: 8px; white-space: nowrap; overflow: hidden"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>ivan motos</div>
+</div>
+<div style="position: relative; aspect-ratio: 2546 / 1256; overflow: hidden; background: #050505">
+<img src="/_blob/00922d475367c1d68daa30ad612aef52" alt="Vídeo do site da Ivan Motos criado pela Orbe Digital, rolando a página" style="width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px">
+<div><h3 class="h" style="margin: 0; font-size: 28px">Ivan Motos</h3><p style="margin: 6px 0 0; font-size: 14px; color: #a3a3a3">Loja de motos · site com catálogo e WhatsApp</p></div>
+<a class="btn btn-ghost" href="{{wa.siteivan}}" target="_blank" rel="noopener" style="flex: none; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 11px 18px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px">Quero um assim <svg class="arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+<div class="rv" style="display: flex; flex-direction: column; gap: 18px">
+<div class="browser" style="border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.14); background: #0a0a0a; box-shadow: 0 40px 80px -40px rgba(0,0,0,.9)">
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #141414; border-bottom: 1px solid rgba(255,255,255,0.08)">
+<div style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #3a3a3a; display: block"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #3a3a3a; display: block"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #3a3a3a; display: block"></span></div>
+<div style="flex: 1; min-width: 0; background: #0a0a0a; border-radius: 8px; padding: 7px 12px; font-size: 12px; color: #a3a3a3; display: flex; align-items: center; gap: 8px; white-space: nowrap; overflow: hidden"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>floranze.co</div>
+</div>
+<div style="position: relative; aspect-ratio: 2546 / 1256; overflow: hidden; background: #050505">
+<img src="/_blob/e47fca789b99bc56bf257bba8d4258c5" alt="Vídeo do site da Floranze criado pela Orbe Digital, rolando a página" style="width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px">
+<div><h3 class="h" style="margin: 0; font-size: 28px">Floranze</h3><p style="margin: 6px 0 0; font-size: 14px; color: #a3a3a3">Brownies e cookies · site com catálogo</p></div>
+<a class="btn btn-ghost" href="{{wa.sitefloranze}}" target="_blank" rel="noopener" style="flex: none; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 11px 18px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px">Quero um assim <svg class="arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 56px">
+<div class="card glass rv" style="border-radius: 18px; padding: 18px 20px; display: flex; gap: 12px; align-items: center; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M20 6L9 17l-5-5"></path></svg>Design exclusivo com animações e parallax</div>
+<div class="card glass rv" style="border-radius: 18px; padding: 18px 20px; display: flex; gap: 12px; align-items: center; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M20 6L9 17l-5-5"></path></svg>Rápido e perfeito no celular</div>
+<div class="card glass rv" style="border-radius: 18px; padding: 18px 20px; display: flex; gap: 12px; align-items: center; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M20 6L9 17l-5-5"></path></svg>Botão do WhatsApp e redes sociais</div>
+<div class="card glass rv" style="border-radius: 18px; padding: 18px 20px; display: flex; gap: 12px; align-items: center; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M20 6L9 17l-5-5"></path></svg>Cardápio, catálogo ou vitrine de produtos</div>
+<div class="card glass rv" style="border-radius: 18px; padding: 18px 20px; display: flex; gap: 12px; align-items: center; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M20 6L9 17l-5-5"></path></svg>Avaliações do Google e localização no mapa</div>
+<div class="card glass rv" style="border-radius: 18px; padding: 18px 20px; display: flex; gap: 12px; align-items: center; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M20 6L9 17l-5-5"></path></svg>Domínio, hospedagem e suporte mensal</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-top: 18px">
+<div class="card glass rv" style="border-radius: 24px; padding: 34px 30px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px">
+<div style="flex: 1 1 220px; min-width: 0"><h3 class="h" style="margin: 0; font-size: 30px">Landing page</h3><p style="margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: #a3a3a3">Uma página única e direta, para campanha, oferta ou link da bio.</p></div>
+<a class="btn btn-ghost" href="{{wa.landing}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 15px 22px; border-radius: 999px; font-size: 15px; font-weight: 700; min-height: 50px">Quero minha landing page</a>
+</div>
+<div class="gb rv" style="border-radius: 24px">
+<div class="card" style="height: 100%; border-radius: 22.5px; background: #fff; color: #000; padding: 34px 30px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px">
+<div style="flex: 1 1 220px; min-width: 0"><h3 class="h" style="margin: 0; font-size: 30px">Site completo</h3><p style="margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: #404040">Várias seções, cardápio ou catálogo, domínio próprio e suporte.</p></div>
+<a class="btn btn-dark" href="{{wa.site}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; background: #000; color: #fff; padding: 15px 22px; border-radius: 999px; font-size: 15px; font-weight: 700; min-height: 50px">Quero meu site</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="eventos" ref="{{refs.ev}}" style="padding: clamp(80px, 10vw, 140px) 24px; position: relative; overflow: hidden">
+<div style="max-width: 1240px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: clamp(40px, 6vw, 90px)">
+
+<div class="clip zoom" style="flex: 1 1 400px; min-width: 0; position: relative; height: clamp(460px, 50vw, 660px); border-radius: 28px; overflow: hidden; background: #111; border: 1px solid rgba(255,255,255,0.1)">
+<div style="position: absolute; left: 0; right: 0; top: -16%; bottom: -16%; transform: {{px.ev}}; will-change: transform">
+<img class="zoomout" src="/_blob/0907f4d9a668ea7db6b661b70bd8a5d6" alt="Lucas Clark trabalhando na edição de um vídeo" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%; display: block">
+</div>
+<div style="position: absolute; top: 22px; left: 22px; right: 22px; display: flex; justify-content: space-between; font-size: 12px; letter-spacing: 0.14em; font-weight: 700; color: #fff">
+<span style="display: flex; align-items: center; gap: 8px"><span class="rec" style="width: 8px; height: 8px; border-radius: 50%; background: #fff; display: block"></span>REC</span>
+<span>4K · 24 FPS</span>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 14px; top: 14px; width: 28px; height: 28px; border-left: 2px solid #fff; border-top: 2px solid #fff"></div>
+<div aria-hidden="true" style="position: absolute; right: 14px; top: 14px; width: 28px; height: 28px; border-right: 2px solid #fff; border-top: 2px solid #fff"></div>
+<div aria-hidden="true" style="position: absolute; left: 14px; bottom: 14px; width: 28px; height: 28px; border-left: 2px solid #fff; border-bottom: 2px solid #fff"></div>
+<div aria-hidden="true" style="position: absolute; right: 14px; bottom: 14px; width: 28px; height: 28px; border-right: 2px solid #fff; border-bottom: 2px solid #fff"></div>
+</div>
+
+<div style="flex: 1 1 480px; min-width: 0">
+<p class="lbl rv" style="margin: 0 0 22px; color: #a3a3a3">Filmmaker &nbsp;|&nbsp; Eventos</p>
+<h2 class="h rv" style="margin: 0; font-size: clamp(40px, 5vw, 76px)">Seu evento acontece uma vez. O filme fica <span class="o">pra sempre</span>.</h2>
+<p class="rv" style="margin: 26px 0 0; font-size: 18px; line-height: 1.65; color: #b5b5b5">Capto, edito e entrego vídeos com linguagem de cinema, prontos para emocionar quem estava lá e para postar enquanto todo mundo ainda fala do evento.</p>
+<div class="rv" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px">
+<span class="tag" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 10px 16px; font-size: 14px; color: #e5e5e5">Casamentos</span>
+<span class="tag" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 10px 16px; font-size: 14px; color: #e5e5e5">Aniversários e 15 anos</span>
+<span class="tag" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 10px 16px; font-size: 14px; color: #e5e5e5">Eventos corporativos</span>
+<span class="tag" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 10px 16px; font-size: 14px; color: #e5e5e5">Shows e festas</span>
+<span class="tag" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 10px 16px; font-size: 14px; color: #e5e5e5">Eventos esportivos</span>
+<span class="tag" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 10px 16px; font-size: 14px; color: #e5e5e5">Inaugurações</span>
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: clamp(64px, 8vw, 100px)">
+
+<div class="card glass rv" style="border-radius: 24px; padding: 34px 30px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><h3 class="h" style="margin: 0; font-size: 30px">Reels do evento</h3><span class="ico" style="width: 48px; height: 48px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><path d="M10.5 9.5v5l4-2.5z"></path></svg></span></div>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #a3a3a3">Vídeos curtos e verticais, com edição dinâmica e entrega rápida para postar ainda no clima do evento.</p>
+<a class="btn btn-ghost" href="{{wa.reels}}" target="_blank" rel="noopener" style="margin-top: auto; display: flex; justify-content: center; align-items: center; border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 15px; border-radius: 999px; font-size: 15px; font-weight: 700; min-height: 50px">Orçar Reels</a>
+</div>
+
+<div class="card glass rv" style="border-radius: 24px; padding: 34px 30px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><h3 class="h" style="margin: 0; font-size: 30px">Aftermovie</h3><span class="ico" style="width: 48px; height: 48px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="15" height="14" rx="2.5"></rect><path d="M17.5 10l4-2.5v9l-4-2.5"></path></svg></span></div>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #a3a3a3">Um filme-resumo do evento, com trilha, tratamento de cor e versão vertical para as redes.</p>
+<a class="btn btn-ghost" href="{{wa.aftermovie}}" target="_blank" rel="noopener" style="margin-top: auto; display: flex; justify-content: center; align-items: center; border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 15px; border-radius: 999px; font-size: 15px; font-weight: 700; min-height: 50px">Orçar Aftermovie</a>
+</div>
+
+<div class="gb rv" style="border-radius: 24px">
+<div class="card" style="height: 100%; border-radius: 22.5px; padding: 34px 30px; display: flex; flex-direction: column; gap: 16px; background: #fff; color: #000">
+<div style="display: flex; justify-content: space-between; align-items: center"><h3 class="h" style="margin: 0; font-size: 30px">Cobertura completa</h3><span style="width: 48px; height: 48px; border-radius: 14px; background: #000; color: #fff; display: flex; align-items: center; justify-content: center; flex: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3.5"></circle></svg></span></div>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #404040">Filme completo do evento, aftermovie, reels e teaser de divulgação, entregues em link para baixar e compartilhar.</p>
+<a class="btn btn-dark" href="{{wa.cobertura}}" target="_blank" rel="noopener" style="margin-top: auto; display: flex; justify-content: center; align-items: center; background: #000; color: #fff; padding: 15px; border-radius: 999px; font-size: 15px; font-weight: 700; min-height: 50px">Orçar cobertura completa</a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section style="padding: clamp(80px, 10vw, 130px) 24px; background: #060606; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07)">
+<div style="max-width: 1240px; margin: 0 auto">
+<h2 class="h rv" style="margin: 0 0 56px; font-size: clamp(36px, 4.6vw, 64px)">Do primeiro contato ao <span class="o">resultado</span>.</h2>
+<div style="position: relative; height: 2px; background: rgba(255,255,255,0.1); margin-bottom: 8px">
+<div class="grow" style="position: absolute; inset: 0; background: #fff; transform-origin: left"></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0">
+<div class="rv" style="padding: 32px 28px 8px 0">
+<p class="h" style="margin: 0; font-size: 56px; color: #2e2e2e">01</p>
+<h3 class="h" style="margin: 14px 0 10px; font-size: 22px">Conversa</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #a3a3a3">Pelo WhatsApp, entendo o seu negócio ou o seu evento e o que você quer alcançar.</p>
+</div>
+<div class="rv" style="padding: 32px 28px 8px 0">
+<p class="h" style="margin: 0; font-size: 56px; color: #2e2e2e">02</p>
+<h3 class="h" style="margin: 14px 0 10px; font-size: 22px">Plano</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #a3a3a3">Você recebe uma proposta clara, com entregas, prazos e investimento.</p>
+</div>
+<div class="rv" style="padding: 32px 28px 8px 0">
+<p class="h" style="margin: 0; font-size: 56px; color: #2e2e2e">03</p>
+<h3 class="h" style="margin: 14px 0 10px; font-size: 22px">Execução</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #a3a3a3">Gravação, criação de conteúdo e campanhas no ar, do jeito combinado.</p>
+</div>
+<div class="rv" style="padding: 32px 0 8px 0">
+<p class="h" style="margin: 0; font-size: 56px; color: #2e2e2e">04</p>
+<h3 class="h" style="margin: 14px 0 10px; font-size: 22px">Resultado</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #a3a3a3">Números acompanhados de perto e ajustes todo mês para crescer mais.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="sobre" ref="{{refs.about}}" style="padding: clamp(80px, 10vw, 150px) 24px; position: relative; overflow: hidden">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(40px, 6vw, 90px)">
+
+<div class="clip zoom" style="flex: 1 1 420px; min-width: 0; position: relative; aspect-ratio: 1 / 1; border-radius: 28px; overflow: hidden; background: #111; border: 1px solid rgba(255,255,255,0.1)">
+<div style="position: absolute; left: 0; right: 0; top: -12%; bottom: -12%; transform: {{px.about}}; will-change: transform">
+<img class="zoomout" src="/_blob/4df9b0f947a112766d1f460671999840" alt="Retrato de Lucas Clark" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block">
+</div>
+<div class="blurin" style="position: absolute; left: 20px; bottom: 20px; background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.14); border-radius: 16px; padding: 12px 16px; display: flex; align-items: center; gap: 12px">
+<img src="/_blob/1c41d618a565f3604e7e73458d6454bb" alt="" style="height: 30px; width: auto; display: block">
+<span style="font-size: 13px; font-weight: 600">Fundador da Orbe Digital</span>
+</div>
+</div>
+
+<div style="flex: 1 1 460px; min-width: 0">
+<p class="lbl blurin" style="margin: 0 0 18px; color: #a3a3a3">Prazer,</p>
+<h2 class="h blurin" style="margin: 0; font-size: clamp(48px, 6vw, 90px)">Lucas <span class="o">Clark</span>.</h2>
+<div class="grow" style="width: 96px; height: 3px; background: #fff; margin: 30px 0; transform-origin: left"></div>
+<div class="blurin" style="display: flex; flex-direction: column; gap: 18px; font-size: 16px; line-height: 1.75; color: #b5b5b5; max-width: 560px">
+<p style="margin: 0">Comecei como <strong style="color: #fff; font-weight: 600">filmmaker</strong> e estrategista digital e hoje sou fundador da <strong style="color: #fff; font-weight: 600">Orbe Digital</strong>, em Piancó, no Sertão da Paraíba. Somos parceiros de <strong style="color: #fff; font-weight: 600">mais de 30 empresas</strong> de nichos diferentes.</p>
+<p style="margin: 0">Sou formado em Análise e Desenvolvimento de Sistemas e tenho <strong style="color: #fff; font-weight: 600">mais de 20 cursos na área de vendas digitais</strong>. Essa bagagem me permite apresentar o seu produto no digital de um jeito mais fácil de entender e de comprar.</p>
+<p style="margin: 0">O resultado é real: <strong style="color: #fff; font-weight: 600">tráfego pago que traz clientes, conteúdo que prende a atenção e produção audiovisual com cara de cinema</strong>.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-top: 34px; max-width: 600px">
+<div class="card rv" style="border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 18px 16px"><p class="h" style="margin: 0; font-size: 32px">+{{n30b}}</p><p style="margin: 6px 0 0; font-size: 12px; color: #a3a3a3">empresas parceiras</p></div>
+<div class="card rv" style="border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 18px 16px"><p class="h" style="margin: 0; font-size: 32px">+{{n20b}}</p><p style="margin: 6px 0 0; font-size: 12px; color: #a3a3a3">cursos em vendas digitais</p></div>
+<div class="card rv" style="border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 18px 16px"><p class="h" style="margin: 0; font-size: 32px">{{n95b}}%</p><p style="margin: 6px 0 0; font-size: 12px; color: #a3a3a3">resultados positivos</p></div>
+<div class="card rv" style="background: #fff; color: #000; border-radius: 18px; padding: 18px 16px"><p class="h" style="margin: 0; font-size: 32px">4K</p><p style="margin: 6px 0 0; font-size: 12px; color: #404040">produção audiovisual</p></div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section style="background: #fff; color: #000; padding: clamp(72px, 9vw, 130px) 24px; position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; right: -4vw; top: 50%; margin-top: -18vw; width: 30vw; opacity: 0.05; pointer-events: none; filter: invert(1); transform: {{px.mark2}}">
+<img src="/_blob/1c41d618a565f3604e7e73458d6454bb" alt="" style="width: 100%; display: block">
+</div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 40px">
+<h2 class="h rv" style="margin: 0; font-size: clamp(48px, 7vw, 110px); max-width: 760px">Chegou a hora de <span class="o-dark">crescer</span>.</h2>
+<div class="rv" style="flex: 0 1 400px; min-width: 0">
+<p style="margin: 0 0 24px; font-size: 17px; line-height: 1.6; color: #333">Junte-se às mais de 30 empresas que já crescem com a Orbe Digital. Me chama no WhatsApp.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<a class="btn btn-dark" href="{{wa.marketing}}" target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; background: #000; color: #fff; padding: 19px 26px; border-radius: 999px; font-size: 16px; font-weight: 700; min-height: 58px">Quero resultados no digital <svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="btn btn-dark" href="{{wa.evento}}" target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; background: transparent; color: #000; border: 1.5px solid #000; padding: 18px 26px; border-radius: 999px; font-size: 16px; font-weight: 700; min-height: 58px">Quero filmar meu evento <svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="padding: 40px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; font-size: 13px; color: #8f8f8f">
+<img src="/_blob/2d45ad0ca5bdb37d35c0f6b76fa14eff" alt="Orbe Digital, empresa de marketing" style="height: 34px; width: auto; display: block">
+<span>Lucas Clark &nbsp;·&nbsp; Piancó – PB &nbsp;·&nbsp; <a href="{{wa.geral}}" target="_blank" rel="noopener" style="color: #d4d4d4">(83) 99194-3005</a></span>
+<span>© 2026 Orbe Digital. Todos os direitos reservados.</span>
+</div>
+</footer>
+
+<a class="btn" href="{{wa.geral}}" target="_blank" rel="noopener" aria-label="Falar com Lucas no WhatsApp" style="position: fixed; right: 22px; bottom: 22px; z-index: 60; width: 62px; height: 62px; border-radius: 50%; background: #fff; color: #000; display: flex; align-items: center; justify-content: center; box-shadow: 0 16px 40px -10px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.2)">
+<span class="ping" style="position: absolute; inset: 0; border-radius: 50%; border: 2px solid #fff; display: block"></span>
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.4A8.5 8.5 0 1 1 21 12z"></path><path d="M9 10.5c.3 1.6 2 3.4 3.8 3.9l1.2-1 1.6.8"></path></svg>
+</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":9500}}'>
+class Component extends DCLogic {
+  componentDidMount() {
+    this._els = this._els || {};
+    this._tick = () => {
+      if (this._raf) return;
+      this._raf = requestAnimationFrame(() => { this._raf = null; this._measure(); });
+    };
+    window.addEventListener('scroll', this._tick, true);
+    window.addEventListener('resize', this._tick);
+    this._measure();
+    this._startCount('hero');
+    this._fallback = setTimeout(() => { this._startCount('stats'); this._startCount('about'); }, 7000);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._tick, true);
+    window.removeEventListener('resize', this._tick);
+    if (this._raf) cancelAnimationFrame(this._raf);
+    if (this._craf) cancelAnimationFrame(this._craf);
+    clearTimeout(this._fallback);
+  }
+  _startCount(which) {
+    this._started = this._started || {};
+    if (this._started[which]) return;
+    this._started[which] = true;
+    const t0 = performance.now();
+    const key = which === 'hero' ? 'kh' : (which === 'about' ? 'ka' : 'ks');
+    const step = (now) => {
+      const t = Math.min(1, (now - t0) / 1900);
+      const e = 1 - Math.pow(1 - t, 3);
+      const s = {}; s[key] = e;
+      this.setState(s);
+      if (t < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+  _measure() {
+    const vh = window.innerHeight || 900;
+    const p = {};
+    const els = this._els || {};
+    let prog = 0;
+    Object.keys(els).forEach((k) => {
+      const el = els[k];
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      if (k === 'root') {
+        const span = r.height - vh;
+        prog = span > 0 ? Math.min(1, Math.max(0, -r.top / span)) : 0;
+        return;
+      }
+      p[k] = Math.round(r.top + r.height / 2 - vh / 2);
+      if (k === 'stats' && r.top < vh * 0.8) this._startCount('stats');
+      if (k === 'about' && r.top < vh * 0.7) this._startCount('about');
+    });
+    this.setState({ p: p, prog: prog });
+  }
+  _spot(e) {
+    const r = e.currentTarget.getBoundingClientRect();
+    const x = ((e.clientX - r.left) / r.width * 100).toFixed(1);
+    const y = ((e.clientY - r.top) / r.height * 100).toFixed(1);
+    this._pendingSpot = x + '% ' + y + '%';
+    if (this._sraf) return;
+    this._sraf = requestAnimationFrame(() => { this._sraf = null; this.setState({ spot: this._pendingSpot }); });
+  }
+  _tilt(e) {
+    const r = e.currentTarget.getBoundingClientRect();
+    const nx = (e.clientX - r.left) / r.width - 0.5;
+    const ny = (e.clientY - r.top) / r.height - 0.5;
+    this._pendingTilt = { x: (-ny * 10).toFixed(2), y: (nx * 12).toFixed(2), glare: ((nx + 0.5) * 100).toFixed(1) + '% ' + ((ny + 0.5) * 100).toFixed(1) + '%' };
+    if (this._traf) return;
+    this._traf = requestAnimationFrame(() => { this._traf = null; this.setState({ tilt: this._pendingTilt }); });
+  }
+  renderVals() {
+    if (!this._refs) {
+      this._els = this._els || {};
+      const set = (k) => (el) => { if (el) this._els[k] = el; };
+      this._refs = { root: set('root'), hero: set('hero'), stats: set('stats'), big: set('big'), ev: set('ev'), about: set('about') };
+      this._onSpot = (e) => this._spot(e);
+      this._onTilt = (e) => this._tilt(e);
+      this._offTilt = () => this.setState({ tilt: null });
+    }
+    const st = this.state || {};
+    const o = st.p || {};
+    const ty = (k, f) => 'translate3d(0,' + ((o[k] || 0) * f).toFixed(1) + 'px,0)';
+    const kh = st.kh || 0;
+    const ks = st.ks || 0;
+    const pct = (v) => (v * ks).toFixed(1) + '%';
+    const base = 'https://wa.me/5583991943005?text=';
+    const m = (t) => base + encodeURIComponent(t);
+    const heroY = o.hero || 0;
+    const ka = st.ka || 0;
+    const bigY = o.big || 0;
+    return {
+      refs: this._refs,
+      onSpot: this._onSpot,
+      onTilt: this._onTilt,
+      offTilt: this._offTilt,
+      spot: st.spot || '70% 30%',
+      tilt: st.tilt || { x: 0, y: 0, glare: '50% 0%' },
+      prog: (st.prog || 0).toFixed(4),
+      n30b: Math.round(30 * ka),
+      n20b: Math.round(20 * ka),
+      n95b: Math.round(95 * ka),
+      n30: Math.round(30 * Math.max(kh, ks)),
+      n95: Math.round(95 * Math.max(kh, ks)),
+      ring: (351.86 * (1 - 0.95 * ks)).toFixed(2),
+      f: { a: pct(100), b: pct(78), c: pct(56), d: pct(38) },
+      px: {
+        hero: ty('hero', -0.14),
+        chip1: ty('hero', 0.2),
+        chip2: ty('hero', -0.32),
+        mark: 'translate3d(0,' + (heroY * 0.3).toFixed(1) + 'px,0) rotate(' + (heroY * -0.03).toFixed(2) + 'deg)',
+        mark2: 'rotate(' + ((o.about || 0) * -0.02).toFixed(2) + 'deg)',
+        big1: 'translate3d(' + (-200 + bigY * 0.6).toFixed(1) + 'px,0,0)',
+        big2: 'translate3d(' + (-500 - bigY * 0.6).toFixed(1) + 'px,0,0)',
+        ev: ty('ev', -0.12),
+        about: ty('about', -0.1)
+      },
+      wa: {
+        geral: m('Olá, Lucas! Vim pelo site da Orbe Digital e quero conversar sobre os seus serviços de marketing e filmagem.'),
+        marketing: m('Olá, Lucas! Vim pelo site da Orbe Digital e quero resultados no meu negócio. Quero saber mais sobre os pacotes de marketing e tráfego pago.'),
+        presenca: m('Olá, Lucas! Vim pelo site da Orbe Digital e tenho interesse no pacote de marketing PRESENÇA. Pode me passar mais detalhes?'),
+        crescimento: m('Olá, Lucas! Vim pelo site da Orbe Digital e tenho interesse no pacote de marketing CRESCIMENTO (com tráfego pago). Pode me passar mais detalhes?'),
+        completo: m('Olá, Lucas! Vim pelo site da Orbe Digital e tenho interesse no pacote de marketing COMPLETO. Pode me passar mais detalhes?'),
+        site: m('Olá, Lucas! Vim pelo site da Orbe Digital e quero um SITE COMPLETO para o meu negócio. Pode me passar mais detalhes?'),
+        landing: m('Olá, Lucas! Vim pelo site da Orbe Digital e quero uma LANDING PAGE para o meu negócio. Pode me passar mais detalhes?'),
+        siteivan: m('Olá, Lucas! Vi o site da Ivan Motos que você criou e quero um site assim para o meu negócio.'),
+        sitefloranze: m('Olá, Lucas! Vi o site da Floranze que você criou e quero um site assim para o meu negócio.'),
+        evento: m('Olá, Lucas! Vim pelo site da Orbe Digital e quero um orçamento de filmagem para o meu evento.'),
+        reels: m('Olá, Lucas! Vim pelo site da Orbe Digital e quero um orçamento de REELS para o meu evento. Data e local: '),
+        aftermovie: m('Olá, Lucas! Vim pelo site da Orbe Digital e quero um orçamento de AFTERMOVIE para o meu evento. Data e local: '),
+        cobertura: m('Olá, Lucas! Vim pelo site da Orbe Digital e quero um orçamento de COBERTURA COMPLETA do meu evento. Data e local: ')
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
